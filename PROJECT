@@ -1,0 +1,14 @@
+domain: argoproj.io
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: argocdsyncer
+repo: github.ru/wbe7/argocdsyncer
+resources:
+- controller: true
+  domain: argoproj.io
+  kind: Application
+  version: v1alpha1
+version: "3"
